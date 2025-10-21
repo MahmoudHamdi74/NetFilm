@@ -1,0 +1,16 @@
+.movie{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: azure;
+    border-radius: 15px;
+}
+.pho{
+    margin: 30px;
+ width: 400px;        /* تملى الكونتينر */
+  max-width: 600px;   /* أقصى عرض */
+  height: 450px;       /* تحافظ على التناسق */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(185, 39, 39, 0.6);
+}
+
