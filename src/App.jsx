@@ -113,7 +113,7 @@ function App() {
           <Container fluid>
             <Navbar.Brand href="/">
               <img
-                src="../public/Gemini_Generated_Image_jqf30ajqf30ajqf3-removebg-preview.png"
+                src="Gemini_Generated_Image_jqf30ajqf30ajqf3-removebg-preview.png"
                 alt="logo"
                 style={{ width: "90px", height: "70px" }}
               />
