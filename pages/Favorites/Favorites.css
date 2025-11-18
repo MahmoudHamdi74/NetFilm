@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+  .container {
+    padding: 10px !important;
+  }
+
+  .container h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .card {
+    margin-bottom: 15px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container h2 {
+    font-size: 1.2rem !important;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+  }
+}

@@ -1,24 +1,3 @@
-/* 
-.pp{
-    display:grid;
-    
-    grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
-
-
-}
-
-
-.card{
-    width: 250px;
-    height: 100%;
-    border-radius: 20px;
-    text-align: center;
-    background-color: brown;
-    margin: 20px;
-    display: flex;
-    align-items: center;
-} */
-
 body{
     background: #111111;
 }
@@ -207,7 +186,6 @@ button:hover{
   margin: 0 1.5em
 }
 
-/* Dark Mode & Light Mode */
 .dark-mode {
   background-color: #111111;
   color: #ffffff;
@@ -234,4 +212,92 @@ button:hover{
 
 .light-mode .card:hover {
   box-shadow: 0px 0px 30px 1px rgba(220, 53, 69, 0.3);
+}
+
+@media (max-width: 768px) {
+  .pp {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .home {
+    width: 5em;
+    font-size: 0.9rem;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pp {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 8px;
+  }
+  
+  .home {
+    width: 4em;
+    height: 2em;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar .form-control {
+    margin: 10px 0 !important;
+  }
+
+  .navbar .btn {
+    margin: 10px 0 !important;
+    width: 100%;
+  }
+
+  .navbar-brand img {
+    width: 70px !important;
+    height: 55px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .mx-auto.col-10 {
+    width: 95% !important;
+  }
+
+  footer .btn-floating {
+    margin: 0.3rem !important;
+    width: 35px;
+    height: 35px;
+  }
+
+  footer .btn-floating i {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand img {
+    width: 60px !important;
+    height: 45px !important;
+  }
+
+  footer .btn-floating {
+    width: 30px;
+    height: 30px;
+  }
+
+  footer .btn-floating i {
+    font-size: 0.8rem;
+  }
+
+  footer .text-center {
+    font-size: 0.85rem;
+  }
 }

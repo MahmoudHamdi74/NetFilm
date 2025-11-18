@@ -35,7 +35,7 @@ const Details = () => {
       API_OPTIONS
     )
       .then((res) => res.json())
-      .then((data) => setCast(data.cast?.slice(0, 10) || [])); // أول 10 ممثلين فقط
+      .then((data) => setCast(data.cast?.slice(0, 10) || []));
   }, [id]);
 
   console.log(movie);
@@ -58,8 +58,8 @@ const Details = () => {
         backgroundImage: `url(https://image.tmdb.org/t/p/w500${movie.backdrop_path})`,
         backgroundSize: "cover",
         height: "88vh",
+        minHeight: "400px",
         borderRadius: "20px",
-        
       }}
       >
       <div

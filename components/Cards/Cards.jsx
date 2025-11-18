@@ -40,35 +40,6 @@ const Cards = ({movies,setSelected,setModalShow}) => {
     </Card>
       ))}
       </div>
-
-
-{/* 
-         <div className="pp">
-        {movies.map((movie, index) => (
-          <div
-            key={index}
-            className="card"
-            onClick={() => {
-              setSelected(movie);
-              setModalShow(true);
-            }}
-          >
-            <img
-              src={"https://image.tmdb.org/t/p/w300/" + movie.poster_path}
-              alt=""
-            />
-            <h1 style={{ color: "white" }}>
-              {movie.title || movie.name}
-            </h1>
-          </div>
-        ))}
-
-      
-
-
-
-
-      </div > */}
     </div>
   )
 }

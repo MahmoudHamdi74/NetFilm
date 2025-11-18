@@ -58,14 +58,13 @@ function MyVerticallyCenteredModal({ show, onHide, movie }) {
   );
 }
 
-// ✅ الكومبوننت الأساسي
 function App() {
   const [modalShow, setModalShow] = useState(false);
   const [movies, setMovies] = useState([]);
   const [selected, setSelected] = useState(null);
   const [page, setPage] = useState(1);
   const [query, setQuery] = useState("");
-  const [fave, setFave] = useState([]); // بدون localStorage
+  const [fave, setFave] = useState([]);
   const [darkMode, setDarkMode] = useState(true);
     const [loading, setLoading] = useState(true);
   const input = useRef();
@@ -92,12 +91,11 @@ function App() {
       setTimeout(() => setLoading(false), 2000);
   }, [page, query]);
 
-  // ✅ handle add/remove favorite
   const HandleAdd = (movie) => {
     if (fave.find((fav) => fav.id === movie.id)) {
-      setFave(fave.filter((fav) => fav.id !== movie.id)); // remove
+      setFave(fave.filter((fav) => fav.id !== movie.id));
     } else {
-      setFave([...fave, movie]); // add
+      setFave([...fave, movie]);
     }
   };
 
@@ -108,7 +106,7 @@ function App() {
       <div className={darkMode ? "dark-mode" : "light-mode"}>
       <BrowserRouter>
 
-        {/* ✅ Navbar */}
+       
         <Navbar expand="lg" className={`${darkMode ? "bg-dark" : "bg-light"} p-0`} variant={darkMode ? "dark" : "light"}>
           <Container fluid>
             <Navbar.Brand href="/">
@@ -158,7 +156,6 @@ function App() {
           </Container>
         </Navbar>
 
-        {/* ✅ Router */}
         <div className="mx-auto col-10">
             <Routes>
               <Route
@@ -205,7 +202,6 @@ function App() {
               />
             </Routes>
 
-            {/* ✅ Movie Modal */}
             <MyVerticallyCenteredModal
               show={modalShow}
               onHide={() => setModalShow(false)}

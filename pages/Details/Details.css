@@ -4,13 +4,56 @@
     align-items: center;
     color: azure;
     border-radius: 15px;
+    padding: 20px;
 }
 .pho{
     margin: 30px;
- width: 400px;        /* تملى الكونتينر */
-  max-width: 600px;   /* أقصى عرض */
-  height: 450px;       /* تحافظ على التناسق */
+ width: 400px;
+  max-width: 600px;
+  height: 450px;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(185, 39, 39, 0.6);
+}
+
+@media (max-width: 1024px) {
+  .movie {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pho {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .pho {
+    max-width: 300px;
+    margin: 15px auto;
+  }
+
+  .movie h1 {
+    font-size: 1.5rem !important;
+    margin: 10px;
+  }
+
+  .movie p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pho {
+    max-width: 250px;
+    margin: 10px auto;
+  }
+
+  .movie h1 {
+    font-size: 1.2rem !important;
+  }
 }
 

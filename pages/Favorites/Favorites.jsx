@@ -1,32 +1,3 @@
-// import React from 'react'
-
-// const Favorites = ({fave}) => {
-//   return (
-//         <div>
-//       <h1>My Favorites</h1>
-//       <div className="pp">
-//         {fave.length === 0 ? (
-//           <p>No favorites yet.</p>
-//         ) : (
-//           fave.map((movie) => (
-//             <div key={movie.id} className="card">
-//               <img
-//                 src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
-//                 alt={movie.title}
-//               />
-//               <h1 style={{ color: "white" }}>{movie.title}</h1>
-//             </div>
-//           ))
-//         )}
-//       </div>
-//     </div>
-//   );
-// };
-
-
-// export default Favorites
-
-
 import React, { useContext, useEffect, useState } from 'react'
 import { Card, Col, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
@@ -34,6 +5,7 @@ import Context from '../../src/Context/Context';
 import Fav from '../../components/Fav/Fav';
 import { FaStar } from 'react-icons/fa';
 import Loader from '../../components/loader/loader';
+import './Favorites.css';
 
 
 const Favorites = () => {
@@ -59,7 +31,7 @@ const Favorites = () => {
       ) : (
         <Row xs={1} md={4} className="g-4">
           {fave.map((movie) => (
-            <Col key={movie.id}>
+            <Col key={movie.id} xs={12} sm={6} md={4} lg={3}>
               <Card>
                 <Card.Img
                   variant="top"
