@@ -6,6 +6,15 @@ body{
     background: #111111;
     overflow-x: hidden;
 }
+
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-collapse {
+  transition: all 0.3s ease;
+}
+
 .pp {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -161,13 +170,13 @@ button:hover{
   height: 2.5em;
   border: #bd2929 0.1em solid;
   border-radius: 11px;
-  text-align: right;
+  text-align: center;
   transition: all 0.6s ease;
   margin-right: 10px;
-  text-align: center;
   text-decoration: none;
   align-content: center;
-  
+  display: inline-block;
+  line-height: 2.3em;
 }
 
 .home:hover {
@@ -216,11 +225,18 @@ button:hover{
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.light-mode .card:hover {
+  .light-mode .card:hover {
   box-shadow: 0px 0px 30px 1px rgba(220, 53, 69, 0.3);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .navbar-brand img {
+    width: 80px !important;
+    height: 62px !important;
+  }
+}
+
+@media (max-width: 991px) {
   .pp {
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 15px;
@@ -283,14 +299,22 @@ button:hover{
 }
 
 @media (max-width: 991px) {
+  .navbar {
+    padding: 5px 10px !important;
+  }
+
   .navbar .form-control {
     margin: 5px 0 !important;
     width: 100%;
+    padding: 6px 10px;
+    font-size: 0.85rem;
   }
 
   .navbar .btn {
     margin: 5px 0 !important;
     width: 100%;
+    padding: 6px 10px;
+    font-size: 0.85rem;
   }
 
   .navbar .d-flex {
@@ -299,16 +323,23 @@ button:hover{
   }
 
   .navbar-brand img {
-    width: 70px !important;
-    height: 55px !important;
+    width: 60px !important;
+    height: 48px !important;
   }
 
   .navbar-collapse {
     text-align: center;
+    padding: 5px 0;
   }
 
   .me-auto {
     margin: 0 auto !important;
+  }
+
+  .home {
+    margin: 5px auto;
+    width: 80%;
+    padding: 8px;
   }
 }
 
@@ -329,13 +360,45 @@ button:hover{
 }
 
 @media (max-width: 480px) {
+  .navbar {
+    padding: 3px 8px !important;
+  }
+
+  .navbar-brand {
+    padding: 3px 0;
+  }
+
   .navbar-brand img {
-    width: 60px !important;
-    height: 45px !important;
+    width: 50px !important;
+    height: 40px !important;
   }
 
   .navbar .form-control {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    padding: 5px 8px;
+    margin: 3px 0 !important;
+  }
+
+  .navbar .btn {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    margin: 3px 0 !important;
+  }
+
+  .navbar-collapse {
+    padding: 3px 0;
+  }
+
+  .home {
+    width: 90%;
+    padding: 6px;
+    font-size: 0.8rem;
+    margin: 3px auto;
+  }
+
+  .navbar-toggler {
+    padding: 4px 8px;
+    font-size: 0.9rem;
   }
 
   footer {
