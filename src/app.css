@@ -12,8 +12,8 @@ body{
 }
 
 .navbar-logo {
-  width: 90px;
-  height: 70px;
+  width: 70px;
+  height: 55px;
   transition: all 0.3s ease;
 }
 
@@ -237,15 +237,15 @@ button:hover{
 
 @media (max-width: 1200px) {
   .navbar-logo {
-    width: 75px;
-    height: 58px;
+    width: 60px;
+    height: 47px;
   }
 }
 
 @media (max-width: 991px) {
   .navbar-logo {
-    width: 55px;
-    height: 43px;
+    width: 48px;
+    height: 38px;
   }
 
   .pp {
@@ -311,12 +311,12 @@ button:hover{
 
 @media (max-width: 991px) {
   .navbar {
-    padding: 5px 10px !important;
+    padding: 3px 8px !important;
   }
 
   .navbar-logo {
-    width: 55px;
-    height: 43px;
+    width: 48px;
+    height: 38px;
   }
 
   .navbar .form-control {
@@ -377,27 +377,27 @@ button:hover{
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 3px 8px !important;
+    padding: 2px 5px !important;
   }
 
   .navbar-brand {
-    padding: 3px 0;
+    padding: 2px 0;
   }
 
   .navbar-logo {
-    width: 45px;
-    height: 35px;
+    width: 40px;
+    height: 32px;
   }
 
   .navbar .form-control {
-    font-size: 0.8rem;
-    padding: 5px 8px;
+    font-size: 0.75rem;
+    padding: 4px 8px;
     margin: 3px 0 !important;
   }
 
   .navbar .btn {
-    padding: 5px 8px;
-    font-size: 0.8rem;
+    padding: 4px 8px;
+    font-size: 0.75rem;
     margin: 3px 0 !important;
   }
 
@@ -413,8 +413,8 @@ button:hover{
   }
 
   .navbar-toggler {
-    padding: 4px 8px;
-    font-size: 0.9rem;
+    padding: 3px 6px;
+    font-size: 0.85rem;
   }
 
   footer {

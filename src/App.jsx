@@ -107,18 +107,18 @@ function App() {
       <BrowserRouter>
 
        
-        <Navbar expand="lg" className={`${darkMode ? "bg-dark" : "bg-light"} p-0`} variant={darkMode ? "dark" : "light"} style={{ padding: "5px 0" }}>
-          <Container fluid style={{ padding: "0 10px" }}>
-            <Navbar.Brand href="/" style={{ margin: 0, padding: "5px 0" }}>
+        <Navbar expand="lg" className={`${darkMode ? "bg-dark" : "bg-light"} p-0`} variant={darkMode ? "dark" : "light"} style={{ padding: "3px 0" }}>
+          <Container fluid style={{ padding: "0 8px" }}>
+            <Navbar.Brand href="/" style={{ margin: 0, padding: "3px 0" }}>
               <img
                 src="Gemini_Generated_Image_jqf30ajqf30ajqf3-removebg-preview.png"
                 alt="logo"
                 className="navbar-logo"
               />
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarScroll" style={{ padding: "5px 10px", fontSize: "1rem" }} />
-            <Navbar.Collapse id="navbarScroll" style={{ padding: "5px 0" }}>
-              <Nav className="me-auto my-2 my-lg-0" navbarScroll style={{ gap: "5px" }}>
+            <Navbar.Toggle aria-controls="navbarScroll" style={{ padding: "4px 8px", fontSize: "0.9rem" }} />
+            <Navbar.Collapse id="navbarScroll" style={{ padding: "3px 0" }}>
+              <Nav className="me-auto my-2 my-lg-0" navbarScroll style={{ gap: "3px" }}>
                 <NavLink className={"home"} to="/movies">Movies</NavLink>
                 <NavLink className={"home"} to="/favorites">Favorites</NavLink>
               </Nav>
@@ -126,7 +126,7 @@ function App() {
                 variant={darkMode ? "outline-danger" : "outline-dark"}
                 className="me-2"
                 onClick={() => setDarkMode(!darkMode)}
-                style={{ padding: "6px 12px", fontSize: "0.9rem" }}
+                style={{ padding: "5px 10px", fontSize: "0.85rem" }}
               >
                 {darkMode ? (
                   <i className="fa fa-sun-o" aria-hidden="true"></i>
@@ -141,7 +141,7 @@ function App() {
                   setPage(1);
                   setQuery(input.current.value);
                 }}
-                style={{ gap: "5px" }}
+                style={{ gap: "3px" }}
               >
                 <Form.Control
                   type="search"
@@ -149,9 +149,9 @@ function App() {
                   className="form-control"
                   aria-label="Search"
                   ref={input}
-                  style={{ margin: 0, padding: "6px 10px", fontSize: "0.9rem" }}
+                  style={{ margin: 0, padding: "5px 8px", fontSize: "0.85rem" }}
                 />
-                <Button type="submit" variant="outline-danger" className="btn" style={{ margin: 0, padding: "6px 12px", fontSize: "0.9rem" }}>
+                <Button type="submit" variant="outline-danger" className="btn" style={{ margin: 0, padding: "5px 10px", fontSize: "0.85rem" }}>
                   Search
                 </Button>
               </Form>

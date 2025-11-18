@@ -4,14 +4,14 @@
   }
 
   .carousel-item img {
-    height: 250px !important;
-    max-height: 40vh !important;
+    height: 300px !important;
+    max-height: 45vh !important;
     object-fit: cover;
   }
 
   .carousel-item div[style*="height"] {
-    height: 250px !important;
-    max-height: 40vh !important;
+    height: 300px !important;
+    max-height: 45vh !important;
   }
 
   .carousel-caption {
@@ -35,14 +35,14 @@
   }
 
   .carousel-item img {
-    height: 180px !important;
-    max-height: 35vh !important;
+    height: 220px !important;
+    max-height: 40vh !important;
     border-radius: 5px !important;
   }
 
   .carousel-item div[style*="height"] {
-    height: 180px !important;
-    max-height: 35vh !important;
+    height: 220px !important;
+    max-height: 40vh !important;
     border-radius: 5px !important;
   }
 
