@@ -113,7 +113,7 @@ function App() {
               <img
                 src="Gemini_Generated_Image_jqf30ajqf30ajqf3-removebg-preview.png"
                 alt="logo"
-                style={{ width: "90px", height: "70px" }}
+                className="navbar-logo"
               />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" style={{ padding: "5px 10px", fontSize: "1rem" }} />

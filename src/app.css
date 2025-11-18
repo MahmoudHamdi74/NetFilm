@@ -11,6 +11,12 @@ body{
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.navbar-logo {
+  width: 90px;
+  height: 70px;
+  transition: all 0.3s ease;
+}
+
 .navbar-collapse {
   transition: all 0.3s ease;
 }
@@ -230,13 +236,18 @@ button:hover{
 }
 
 @media (max-width: 1200px) {
-  .navbar-brand img {
-    width: 80px !important;
-    height: 62px !important;
+  .navbar-logo {
+    width: 75px;
+    height: 58px;
   }
 }
 
 @media (max-width: 991px) {
+  .navbar-logo {
+    width: 55px;
+    height: 43px;
+  }
+
   .pp {
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 15px;
@@ -301,6 +312,11 @@ button:hover{
 @media (max-width: 991px) {
   .navbar {
     padding: 5px 10px !important;
+  }
+
+  .navbar-logo {
+    width: 55px;
+    height: 43px;
   }
 
   .navbar .form-control {
@@ -368,9 +384,9 @@ button:hover{
     padding: 3px 0;
   }
 
-  .navbar-brand img {
-    width: 50px !important;
-    height: 40px !important;
+  .navbar-logo {
+    width: 45px;
+    height: 35px;
   }
 
   .navbar .form-control {
