@@ -30,30 +30,62 @@
 }
 
 @media (max-width: 768px) {
+  .movie {
+    padding: 10px;
+  }
+
   .pho {
-    max-width: 300px;
-    margin: 15px auto;
+    max-width: 280px;
+    margin: 10px auto;
+    height: auto;
   }
 
   .movie h1 {
-    font-size: 1.5rem !important;
-    margin: 10px;
+    font-size: 1.3rem !important;
+    margin: 10px 5px;
   }
 
   .movie p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     padding: 0 10px;
+    line-height: 1.4;
+  }
+
+  .pp {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
   }
 }
 
 @media (max-width: 480px) {
+  .movie {
+    padding: 5px;
+  }
+
   .pho {
-    max-width: 250px;
+    max-width: 200px;
     margin: 10px auto;
+    height: auto;
   }
 
   .movie h1 {
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
+    margin: 5px;
+  }
+
+  .movie p {
+    font-size: 0.75rem;
+    padding: 0 5px;
+  }
+
+  .pp {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .card {
+    width: 100% !important;
+    margin: 5px 0 !important;
   }
 }
 

@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+  .Pagination {
+    padding: 15px 0;
+  }
+
+  .pagination {
+    font-size: 0.9rem;
+  }
+
+  .page-link {
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Pagination {
+    padding: 10px 0;
+  }
+
+  .pagination {
+    font-size: 0.8rem;
+    gap: 3px;
+  }
+
+  .page-link {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+
+  .page-item {
+    margin: 0 2px;
+  }
+}

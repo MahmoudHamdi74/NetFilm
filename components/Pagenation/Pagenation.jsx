@@ -1,6 +1,6 @@
 import React from 'react'
 import Pagination from "react-bootstrap/Pagination";
-
+import './Pagenation.css';
 
 
 const Pagenation = ({page,setPage}) => {

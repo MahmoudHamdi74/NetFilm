@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body{
     background: #111111;
+    overflow-x: hidden;
 }
 .pp {
     display: grid;
@@ -7,6 +12,7 @@ body{
     gap: 20px; 
     justify-items: center; 
     margin-top: 40px;
+    padding: 0 10px;
 }
 
 .card {
@@ -216,11 +222,42 @@ button:hover{
 
 @media (max-width: 768px) {
   .pp {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
     padding: 10px;
+    margin-top: 20px;
   }
 
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+  }
+
+  .home {
+    width: 5em;
+    font-size: 0.85rem;
+    margin-right: 5px;
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pp {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 5px;
+  }
+  
   .card {
     width: 100%;
   }
@@ -228,41 +265,50 @@ button:hover{
   img {
     width: 100%;
     height: auto;
-  }
-
-  .home {
-    width: 5em;
-    font-size: 0.9rem;
-    margin-right: 5px;
-  }
-}
-
-@media (max-width: 480px) {
-  .pp {
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 8px;
+    min-height: 180px;
+    object-fit: cover;
   }
   
   .home {
-    width: 4em;
-    height: 2em;
-    font-size: 0.8rem;
+    width: 100%;
+    height: auto;
+    font-size: 0.75rem;
+    margin: 5px 0;
+    padding: 8px;
+  }
+
+  h1 {
+    font-size: 0.85rem;
   }
 }
 
 @media (max-width: 991px) {
   .navbar .form-control {
-    margin: 10px 0 !important;
+    margin: 5px 0 !important;
+    width: 100%;
   }
 
   .navbar .btn {
-    margin: 10px 0 !important;
+    margin: 5px 0 !important;
     width: 100%;
+  }
+
+  .navbar .d-flex {
+    width: 100%;
+    flex-direction: column;
   }
 
   .navbar-brand img {
     width: 70px !important;
     height: 55px !important;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .me-auto {
+    margin: 0 auto !important;
   }
 }
 
@@ -288,16 +334,30 @@ button:hover{
     height: 45px !important;
   }
 
+  .navbar .form-control {
+    font-size: 0.85rem;
+  }
+
+  footer {
+    padding: 10px 5px !important;
+  }
+
   footer .btn-floating {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
+    margin: 0.2rem !important;
   }
 
   footer .btn-floating i {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 
   footer .text-center {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    padding: 10px 5px !important;
+  }
+
+  footer .p-4 {
+    padding: 10px !important;
   }
 }

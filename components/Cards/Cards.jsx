@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import { FaStar } from 'react-icons/fa';
 import Fav from '../Fav/Fav';
 import { useNavigate } from 'react-router-dom';
+import './Cards.css';
 
 const Cards = ({movies,setSelected,setModalShow}) => {
     const navigate = useNavigate()
